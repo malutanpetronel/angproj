@@ -4,7 +4,16 @@
 
 This is my first project with angular.
 
+
+npm install grunt-contrib-compass --save-dev
+
+npm install -g generator-angular.
+yo angular
+
+##########
+
 Started based on 
+
 http://www.sitepoint.com/kickstart-your-angularjs-development-with-yeoman-grunt-and-bower/
 
 ##################################

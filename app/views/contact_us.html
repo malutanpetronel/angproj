@@ -1,0 +1,14 @@
+<div ng-controller="MainCtrl">
+    <p>
+        Contact us with any questions/suggestions you might have regarding {{ company.product }}. 
+        If you are experiencing errors with {{ company.product }}, we recommend checking first if 
+        there isn't already an answer on the FAQ page.
+    </p>
+    <p>Our emails</p>
+    <ul>
+        <li class="list-group-item" ng-repeat="email in company.emails | orderBy: email.name">
+          <span>{{ email.name }}</span>:
+          <span ng-class="{high:'bolder', low:'thiner', 'none':'greyed'}[email.importancy]">{{ email.email}}</span>
+        </li>
+    </ul>
+</div>

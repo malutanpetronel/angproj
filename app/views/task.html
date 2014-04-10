@@ -1,0 +1,17 @@
+<div ng-controller="TaskCtrl" ng-init="show = 1;
+            hide = true;
+            bold = true;" >
+    <p> Add new task <input type="text" ng-model="task">
+        <button ng-click="addNewTask(task)"> Add task </button>
+    </p>
+    <span ng-bind="name"></span>
+    <input type="text" ng-model="filter"> 
+    <ul>
+        <li ng-class="{boldclass: bold}" ng-repeat="task in tasks| filter:filter | orderBy: task.age">{{ task.name}} and age {{task.age}} </li>
+    </ul>
+
+    <div ng-show="show">sdfsdfsdf </div>
+    <div ng-hide="hide">sdfsdfsdf </div>
+
+</div>
+
